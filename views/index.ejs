@@ -1,16 +1,31 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
+    <title>App</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <h1>Upload Image</h1>
+    <p>Welcome to App</p>
+    <div>
+        <% images.forEach((Image) => { %>
+          <a href="/<%= Image.id %>" class="list-group-item">
+            <h4 class="list-group-item-heading"><%= Image.text %></h4>
+          </a>
+        <% }) %>
+    </div>
     <br><br>
     <form action="/" method="post" enctype="multipart/form-data">
-    	<input type="file" name="myimage">
-    	<input type="submit" name="submit" value="submit">
+      <p>
+        Text :
+        <input type="text" name="text">
+      </p>
+      <p>
+        <input type="file" name="myimage">
+      </p>
+      <p>
+        <input type="submit" name="submit" value="submit">
+      </p>
     </form>
   </body>
 </html>

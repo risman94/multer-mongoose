@@ -8,7 +8,7 @@ var ImageShcema = new Schema({
 		required: true
 	},
 	image: {
-		type: String,
+		type: Buffer,
 	}
 });
 
