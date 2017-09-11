@@ -1,22 +1,25 @@
 ## Upload Image expressjs with multer and mongoose
 
-Demo upload single image with multer 
+#### Demo upload single image with multer 
+doc [multer](https://www.npmjs.com/package/multer)
 
 git clone : 
-'git@github.com:risman94/multer-mongoose.git'
+'https://github.com/risman94/multer-mongoose.git'
 and instal all package
-'npm install'
+```
+npm install
+```
 
 add file 'config/config.json' for connect with your database
 ```json
 {
 	"test": {
-		"PORT": 'your-port',
+		"PORT": "your-port",
 		"MONGODB_URI": "mongodb://localhost/'your-database'"
 	}
 }
 ```
 
-'npm start'
-
-doc [multer](https://www.npmjs.com/package/multer)
+```
+npm start
+```
